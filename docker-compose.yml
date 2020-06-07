@@ -5,8 +5,8 @@ services:
     build: #buildしたときのimage名はimageに指定した名前になる
       context: ./
       dockerfile: Dockerfile
-    image: hazuki3417/centos7.8:latest
-    container_name: centos7.8
+    image: hazuki3417/centos:latest
+    container_name: centos
     environment:
       TZ: Asia/Tokyo
     tty: true
