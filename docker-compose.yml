@@ -1,0 +1,16 @@
+version: "3.0"
+
+services:
+  centos7.8:
+    build: #buildしたときのimage名はimageに指定した名前になる
+      context: ./
+      dockerfile: Dockerfile
+    image: hazuki3417/centos7.8:latest
+    container_name: centos7.8
+    environment:
+      TZ: Asia/Tokyo
+    tty: true
+
+networks:
+  common_link:
+    external: true
