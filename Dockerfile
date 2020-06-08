@@ -29,7 +29,6 @@ LABEL maintainer="hazuki3417 <hazuki3417@gmail.com>"
 	# 	iproute2 \
 	# 	gnupg
 
-# sudoの設定
 
 # bashの設定
 COPY config/.bashrc /root/.bashrc
